@@ -28,3 +28,4 @@ const getLatestRelease = async function (owner, repo, targetVersion, options) {
 };
 
 exports.getLatestRelease = getLatestRelease;
+exports.getUrl = getUrl;
