@@ -1,6 +1,5 @@
 {
   "name": "github-release-channel",
-  "type": "module",
   "version": "1.0.1",
   "description": "OpenFaaS Function",
   "main": "handler.js",
