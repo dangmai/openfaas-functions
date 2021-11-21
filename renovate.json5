@@ -1,0 +1,20 @@
+{
+  extends: ["config:base"],
+  bumpVersion: "patch",
+  ignoreTests: true,
+  assignees: ["dangmai"],
+  packageRules: [
+    {
+      matchUpdateTypes: ["minor", "patch", "pin", "digest"],
+      automerge: true,
+    },
+    {
+      matchUpdateTypes: ["major"],
+      matchManagers: ["npm"],
+      // node-fetch 3 only supports ESM, which Jest needs a lot of extra
+      // configuration to support
+      matchPackageNames: ["node-fetch"],
+      enabled: false,
+    },
+  ],
+}
