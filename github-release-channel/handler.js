@@ -16,9 +16,9 @@ module.exports = async (event, context) => {
     }
 
     const url = await getUrl(
-      pathPortions[0],
       pathPortions[1],
       pathPortions[2],
+      pathPortions[3],
       options
     );
     return context.status(302).headers({
