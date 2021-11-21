@@ -30,5 +30,6 @@ jobs:
           OWNER="dangmai" 
           TAG="latest"
           faas-cli publish
+          --yaml stack.yaml
           --extra-tag ${{ github.sha }}
           --platforms linux/arm/v7,linux/arm64,linux/amd64
