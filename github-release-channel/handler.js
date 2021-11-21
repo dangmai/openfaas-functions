@@ -14,6 +14,10 @@ module.exports = async (event, context) => {
     if (event.query.includePrerelease === "true") {
       options.includePrerelease = true;
     }
+    console.log(pathPortions[1]);
+    console.log(pathPortions[2]);
+    console.log(pathPortions[3]);
+    console.log(options);
 
     const url = await getUrl(
       pathPortions[1],
