@@ -4,6 +4,8 @@ const { getUrl } = require("./main");
 
 module.exports = async (event, context) => {
   try {
+    console.log(event.path);
+    console.log(event.query);
     const url = await getUrl("rancher", "k3os", "~0.21.0", {
       includePrerelease: true,
     });
