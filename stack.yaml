@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+
+functions:
+  github-release-channel:
+    lang: node16
+    handler: ./github-release-channel
+    image: ghcr.io/${OWNER:-dangmai}/github-release-channel:${TAG:-latest}
