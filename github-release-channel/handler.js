@@ -4,11 +4,23 @@ const { getUrl } = require("./main");
 
 module.exports = async (event, context) => {
   try {
-    console.log(event.path);
-    console.log(event.query);
-    const url = await getUrl("rancher", "k3os", "~0.21.0", {
-      includePrerelease: true,
-    });
+    const pathPortions = event.path.split("/");
+    if (pathPortions.length < 4) {
+      throw new Error("not enough parameters");
+    }
+    const options = {
+      includePrerelease: false,
+    };
+    if (event.query.includePrerelease === "true") {
+      options.includePrerelease = true;
+    }
+
+    const url = await getUrl(
+      pathPortions[0],
+      pathPortions[1],
+      pathPortions[2],
+      options
+    );
     return context.status(302).headers({
       Location: url,
     });
