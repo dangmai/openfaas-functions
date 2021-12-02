@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "Send fetch requests after certain local file/dir is detected",
   "main": "handler.js",
-  "scripts": {},
+  "scripts": {
+    "test": "jest"
+  },
   "keywords": [],
   "author": "Dang Mai",
   "license": "MIT",
   "dependencies": {
     "node-fetch": "2.6.6"
+  },
+  "devDependencies": {
+    "jest": "27.4.3"
   }
 }
