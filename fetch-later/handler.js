@@ -4,6 +4,7 @@ const { fetchLater } = require("./main");
 
 module.exports = async (event, context) => {
   try {
+    console.info(event.body);
     const req = JSON.parse(event.body);
     await fetchLater(
       req.localPath,
