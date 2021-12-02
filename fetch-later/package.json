@@ -1,0 +1,13 @@
+{
+  "name": "fetch-later",
+  "version": "1.0.0",
+  "description": "Send fetch requests after certain local file/dir is detected",
+  "main": "handler.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Dang Mai",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "2.6.6"
+  }
+}

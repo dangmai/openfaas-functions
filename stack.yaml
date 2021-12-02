@@ -7,3 +7,7 @@ functions:
     lang: node16
     handler: ./github-release-channel
     image: ghcr.io/${OWNER:-dangmai}/github-release-channel:${TAG:-latest}
+  fetch-later:
+    lang: node16
+    handler: ./fetch-later
+    image: ghcr.io/${OWNER:-dangmai}/fetch-later:${TAG:-latest}
