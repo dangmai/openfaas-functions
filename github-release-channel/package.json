@@ -1,6 +1,6 @@
 {
   "name": "github-release-channel",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "OpenFaaS Function",
   "main": "handler.js",
   "scripts": {
@@ -14,6 +14,6 @@
     "semver": "^7.3.5"
   },
   "devDependencies": {
-    "jest": "27.4.5"
+    "jest": "27.4.6"
   }
 }
