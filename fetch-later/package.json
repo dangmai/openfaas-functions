@@ -1,6 +1,6 @@
 {
   "name": "fetch-later",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "Send fetch requests after certain local file/dir is detected",
   "main": "handler.js",
   "scripts": {
@@ -13,6 +13,6 @@
     "node-fetch": "2.7.0"
   },
   "devDependencies": {
-    "jest": "29.6.4"
+    "jest": "29.7.0"
   }
 }
